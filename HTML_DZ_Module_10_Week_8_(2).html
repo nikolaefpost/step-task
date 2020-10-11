@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>DZ_Module_4</title>
-	<link rel="stylesheet"  href="DZ_Module_4.css">
-	<style></style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML_DZ_Module_10_Week_8_(2)Yemelyanov</title>
 
-<script></script>
+	<link rel="stylesheet" media="screen and (min-width:800px) and (max-width:3840px)  " href="HTML_DZ_Module_10_Week_8_(2).css">
 
+	<style ></style>
 </head>
 <body>
-	<div>
-		<div id="bigcirc">
-			<p id="bigstr"></p>
-			<p id="smolstr"></p>
-		</div>
-	</div>
-	<div class="cont">
-		<p id="text" >HELLO!</p>
-		<p id="leftSide"></p>
-		<p id="rightSide"></p>
+  <div class="container">
+	<div id="input">
+		<h2>Input</h2>
+		<p>
+			<input type="text" id="deflt" name="default" placeholder="Enter some text">
+			<input type="text" id="corr" name="correct" placeholder="valid text &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ">
+			<input type="text" id="ncorr" name="nocorrect" placeholder="invalid text &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#10004;">
 
-	</div>
-
-	<div class="top">
-		<p id="leftText">HELLO, WORLD!</p>
-		<p id="rightImg">
-			<img src="circle-1270673_960_720.png">
 		</p>
 	</div>
+
+	<div id="input">
+		<h2>Check boxed</h2>
+		<p class="row">
+			<input type="checkbox" id="check" class="custom-checkbox"><label for="check">Subscribe</label>
+			<input type="checkbox" id="nocheck" class="custom-checkboxN"><label for="nocheck">Subscribe</label>
+		</p>
+	</div>
+</div>
 </body>
+</html>
