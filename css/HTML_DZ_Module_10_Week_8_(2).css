@@ -1,0 +1,122 @@
+@charset "utf-8";
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	font-size:1.5vmin;
+	border:none;
+}
+
+h2{
+	margin:20px 0;
+}
+.container{
+	width:100vw;
+	height:50vh;
+	max-width:3840px;
+	min-width:300px;
+	padding:5vmin;
+	background-color:#e9eff2;
+}
+
+#corr{
+	border: 1px solid green;
+	border-radius: 0.25em;
+	padding:.5vmin 1vmin;
+	color:green;
+}
+
+#corr::placeholder{
+	color:green;
+}
+
+
+
+#corr::placeholder::after{
+	content: '&#10004;'
+	/* text-align:end; */
+}
+
+.row{
+	display: inline-flex;
+	align-items: center;
+
+}
+
+.custom-checkbox, .custom-checkboxN {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox+label,
+.custom-checkboxN+label, {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+
+}
+.custom-checkbox+label::before,
+.custom-checkboxN+label::before  {
+  content: '';
+  display: inline-block;
+  width: 2em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  transform:translateY(.15em);
+}
+
+.custom-checkbox+label::before{
+	border: 1px solid green;
+}
+
+.custom-checkboxN+label::before{
+	border: 1px solid red;
+}
+
+.custom-checkbox+label::after{
+	content: '';
+	display: inline-block;
+	width: .9em;
+	height: .85em;
+	border-radius: 0.25em;
+	background:green;
+	position:relative;
+	transform:translate(-6.4em, 0);
+
+}
+
+.custom-checkbox:checked + label:before {
+	border: 1px solid red;
+}
+.custom-checkbox:checked + label:after {
+	left:.95em;
+	background:red;
+}
+.custom-checkbox:focus + label:before,
+.custom-checkboxN:focus + label:before {
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px rgba(255,255,0,.7);
+}
+
+
+.custom-checkboxN+label::after{
+	content: '';
+	display: inline-block;
+	width: .9em;
+	height: .85em;
+	border-radius: 0.25em;
+	background:red;
+	position:relative;
+	transform:translateX(-5.5em);
+}
+
+.custom-checkboxN:checked + label:before {
+	border: 1px solid green;
+}
+.custom-checkboxN:checked + label:after {
+	right:.95em;
+	background:green;
+}
