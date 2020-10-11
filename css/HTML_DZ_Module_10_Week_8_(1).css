@@ -1,0 +1,68 @@
+@charset "utf-8";
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	font-size:1.5vmin;
+}
+.container{
+	width:60vmin;
+	height:35vmin;
+	max-width:3840px;
+	min-width:300px;
+	padding:4vmin;
+	margin:5vw 10vw;
+	background-color:#99c5c7;
+	background-image: url(pic/moon_flag.png);
+	background-position: 130% 140%;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	border-radius: 3vmin;
+}
+
+.details{
+	padding: 1vmin 1.5vmin;
+	margin:0 0 2vmin -6vmin;
+	width:90%;
+	color:white;
+	background:#cc5633;
+}
+
+input[type=text]{
+  background:#99c5c7;
+  padding: 1vmin 1.5vmin;
+  margin: .8vmin 0;
+  background:#addee0;
+  border:none;
+  box-shadow: 1px 3px 0 rgba(0,0,0,0.4);
+  border-radius: 4px;
+}
+
+
+
+#credit{
+	display:flex;
+	flex-flow: column nowrap;
+	width:60%;
+}
+
+#expdate{
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content:space-between;
+}
+
+.col{
+	display:flex;
+	flex-flow: column nowrap;
+	flex: 30% 0 0;
+}
+
+#year{flex: 30% 0 0;}
+
+#number, #name{width:100%;}
+
+#month, #year, #CVV{width:100%;}
+
+#year{align-self:flex-end;}
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DZ_Module_8_9_Yemelyanov</title>
+	
+	<link rel="stylesheet" media="screen and (min-width:800px) and (max-width:3840px)  " href="HTML_DZ_Module_10_Week_8_(1).css">
+	
+	<style ></style>
+</head>
+<body>
+  <div class="container">
+	<div id="card">
+		<p class="details">CREDIT CARD DETAILS</p>
+		
+		
+		<form method="post" action="http://localhost:8080/login.php" id="credit">
+            
+			<label for="number">Card Number</label>
+			<input type="text" id="number" name="CardNumber" placeholder="1234 5678 9123 4567">
+			 
+			<label for="name">Name On Card</label> 
+			<input type="text" id="name" name="NameOnCard" placeholder="Name Surname">
+			
+			<div id="expdate">
+				<p class="col">
+					<label for="month">Expiry Date</label> 
+					<input type="text" id="month" name="ExpiryMonth" placeholder="02">
+				</p>
+				
+				<input type="text" id="year" name="ExpiryYear" placeholder="2017">
+				
+				<p class="col">
+					<label for="CVV">CVV/CVN</label> 
+					<input type="text" id="CVV" name="CVVcode" placeholder="***">
+				</p>
+				
+			</div>
+			
+		</form>
+		
+	</div>
+</div>  
+</body>
+</html>
