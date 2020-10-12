@@ -1,0 +1,112 @@
+@charset "utf-8";
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	font: 2.5vh normal Arial;
+}
+.container{
+	width:90vw;
+
+	max-width:3840px;
+	min-width:900px;
+	padding:10vmin;
+	padding-bottom: 18vmin;
+	margin:5vw 5vw;
+	background-color:#d0d7d9;
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 15px 3px rgba(0,0,0,.5);
+}
+
+h1{
+	margin:10px 0 10vh 0;
+	font-size:4vh;
+}
+
+.forma{
+  display:flex;
+  flex-flow: column nowrap;
+	justify-content: space-between;
+	margin-bottom: 5vh;
+}
+
+.registr{
+  display:flex;
+  flex-flow: column nowrap;
+	flex: 47% 0 0;
+	align-items:flex-start;
+}
+
+.row, .row1, .row2{
+	display:flex;
+
+  /* margin-bottom: 7vmin; */
+}
+
+.row{
+  flex-flow: column nowrap;
+  width: 95%;
+}
+.row1{
+  flex-flow: row wrap;
+  justify-content:flex-start;
+  width: 95%;
+}
+.row2{
+  flex-flow: row nowrap;
+  width: 90%;
+}
+
+.inputT, .inputP, .inputP2{
+	border: none;
+	border-bottom: 1px solid grey;
+	background-color:#d0d7d9;
+	margin-left: 3vmin;
+  margin-bottom: 14vmin;
+}
+
+.inputP{flex: 95% 0 0; width: 90%}
+.inputP2{flex: 90% 0 0; width: 95%}
+.inputT{flex: 95% 0 0; width: 95%}
+
+.blck::placeholder{color:black;}
+
+.reckt{
+	border-radius: 0.25em;
+	padding:.5vmin 2.5vmin;
+	margin-right: .5vmin;
+}
+
+.white{color: white;}
+.submit{
+	background: #207373;
+	margin: 6vmin 0;
+	float: right;
+}
+
+.pic{
+	width: 1.3em;
+	height: 1.3em;
+	flex: 3% 0 0;
+}
+
+.mrl3{
+  margin-left: 10vw;
+}
+
+.mrl1{
+  margin-left: 2.5vw;
+}
+
+.checked{
+	border-bottom: 1px solid grey;
+	padding-bottom: 8vmin;
+
+}
+
+#check1 + label, #check2 + label{
+  font: 2.5vh normal sans-serif;
+}
+
+#check1, #check2{
+	margin-right: .5vmin;
+}
