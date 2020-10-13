@@ -11,7 +11,11 @@
 	border: 1px solid green;         /*  input с корректными данными   */
 	color:green;
 }
-#corr::placeholder{color:green;}
+#corr::placeholder{
+	color:green;
+	background: url(../pic/valid.png) no-repeat center right;
+	background-size:7%;
+}
 
 #ncorr{                             /*  input с некорректными данными   */
 	border: 1px solid red;
@@ -21,7 +25,8 @@
 }
 #ncorr::placeholder{
 	color:red;
-	background-image: url(pic\invalid.png);
+	background: url(../pic/invalid.png) no-repeat center right;
+	background-size:7%;
 }
 
 

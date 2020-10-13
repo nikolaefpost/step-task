@@ -6,7 +6,7 @@
 	font: 1.5vh normal Arial;
 }
 .container{
-	width:90vw;
+	width:50vw;
 
 	max-width:3840px;
 	min-width:900px;
@@ -88,4 +88,9 @@ h1{
 
 #check1, #check2{
 	margin-right: .5vmin;
+}
+
+#corr::placeholder{
+	background: url(../pic/valid.png) no-repeat center right;
+	background-size:7%;
 }

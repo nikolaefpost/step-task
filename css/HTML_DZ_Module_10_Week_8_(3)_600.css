@@ -90,3 +90,8 @@ h1{
 #check1, #check2{
 	margin-right: .5vmin;
 }
+
+#corr::placeholder{
+	background: url(../pic/valid.png) no-repeat center right;
+	background-size:5%;
+}
