@@ -21,7 +21,7 @@
 }
 #ncorr::placeholder{
 	color:red;
-	background: url(pic\invalid.png);
+	background-image: url(pic\invalid.png);
 }
 
 
