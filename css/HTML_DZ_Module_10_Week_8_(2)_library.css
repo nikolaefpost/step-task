@@ -19,7 +19,10 @@
 	padding:.5vmin 1vmin;
 	color:red;
 }
-#ncorr::placeholder{color:red;}
+#ncorr::placeholder{
+	color:red;
+	background: url(pic\invalid.png);
+}
 
 
 
