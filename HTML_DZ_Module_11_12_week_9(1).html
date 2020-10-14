@@ -11,62 +11,300 @@
     <title>Hello, world!</title>
   </head>
   <body>
-		<div class="container-fluid ">
-      <nav class="navbar navbar-dark bg-info">
-			<div class="row text-white p-2  align-items-center">
-				<div class="col-lg-1 d-flex justify-content-center">
-					<img src="pic/user-graduate.png" alt="student" width="50" height="50" class="">
-				</div>
-				<div class="col-lg-1">
-					<h4 class="">Attendance</h4>
-				</div>
-				<div class="col-lg-1">
-					<h4 class="text-white-50">Schedule</h4>
-				</div>
-				<div class="col-lg-1">
-          <h4 class=" text-white-50">Homework</h4>
-        </div>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-1"></div>
-				<div class="col-lg-1"></div>
-        <div class="col-lg-1 d-flex justify-content-center ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info text-white">
+      <a class="navbar-brand mr-5" href="#">
+        <img src="pic/user-graduate.png" alt="student" width="50" height="50" class="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#"><h4>Attendance</h4><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white-50" href="#"><h4>Schedule</h4></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white-50" href="#"><h4>Homework</h4></a>
+          </li>
+        </ul>
+        <a class="navbar-brand mr-5" href="#">
           <img src="pic/bell-solid 1.png" style="opacity:0.5" alt="bell" class="m-1" width="40" height="40">
-        </div>
-				<div class="col-lg-1 d-flex justify-content-center">
-					<img src="pic/user-circle-solid.png" style="opacity:0.5" alt="user" width="40" height="40" class="m-1 ">
-				</div>
-				<div class="col-lg-1  d-flex justify-content-center ">
-					<img src="pic/door-open-solid.png" class="" style="opacity:0.5" alt="door" width="40" height="40" >
-				</div>
-			</div>
-      </nav>
+        </a>
+        <a class="navbar-brand mr-5" href="#">
+          <img src="pic/user-circle-solid.png" style="opacity:0.5" alt="user" width="40" height="40" class="m-1 ">
+        </a>
+        <a class="navbar-brand mr-5" href="#">
+          <img src="pic/door-open-solid.png" class="" style="opacity:0.5" alt="door" width="40" height="40" >
+        </a>
+      </div>
+    </nav>
 
 
-			<div class="row justify-content-center mt-5 ">
+		<div class="row justify-content-center mt-5 ">
 				<div class="col-lg-2">
-					<h2 class="text-nowrap">23 APRIL, TUESDAY</h2>
+					<h2 class="text-nowrap text-secondary">23 APRIL, TUESDAY</h2>
 				</div>
 			</div>
 
-      <div class="row mt-5  ml-1 mr-1">
-        <div class="col-lg-1 border border-bottom-0">1 Lesson</div>
-        <div class="col-lg-1 border-bottom">2 Lesson</div>
-        <div class="col-lg-1 border-bottom">3 Lesson</div>
-        <div class="col-lg-1 border-bottom">4 Lesson</div>
-        <div class="col-lg-1 border-bottom">5 Lesson</div>
-        <div class="col-lg-1 border-bottom">6 Lesson</div>
-        <div class="col-lg-1border-bottom">7 Lesson</div>
-        <div class="col-lg-1border-bottom">8 Lesson</div>
-        <div class="col-lg-1border-bottom"></div>
-        <div class="col-lg-1border-bottom"></div>
-        <div class="col-lg-1border-bottom"></div>
-
-
+    <div class="mr-2 ml-2">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">1 Lesson</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">2 Lesson</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">3 Lesson</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">4 Lesson</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">5 Lesson</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">6 Lesson</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">7 Lesson</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">8 Lesson</a>
+          </li>
+        </ul>
       </div>
 		</div>
 
+    <table class="table table-borderless ml-5" style="width:auto; ">
+      <thead>
+        <tr class="text-secondary">
+          <td scope="col"><small>Group</small></td>
+          <td scope="col"><small>Subject</small></td>
+          <td scope="col"><small>Lesson topic</small></td>
+          <td scope="col"><small>Homework</small></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="align-items-center">
+          <td >ABC-1234</td>
+          <td>HTML & CSS</td>
+          <td colspan="2">
+            <form class="form-inline">
+              <div class="form-group mx-sm-3 mb-2">
+                <label for="inputPassword2" class="sr-only"></label>
+                <input type="password" class="form-control" id="inputPassword2" placeholder="">
+              </div>
+              <button type="submit" class="btn btn-info mb-2">Add homework</button>
+            </form>
+          </td>
+
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table mr-1 ml-1">
+      <thead class="bg-info text-white" style="filter: opacity(30%);">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">GPA</th>
+          <th scope="col">Is present</th>
+          <th scope="col">Test</th>
+          <th scope="col">Classwork</th>
+          <th scope="col">Comment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Valentin Scott</td>
+          <td>10</td>
+          <td>
+            <div class="form-check form-check-inline ">
+              <input class="form-check-input border-success" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1"></label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2"></label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
+              <label class="form-check-label" for="inlineRadio3"></label>
+            </div>
+          </td>
+          <td>
+            <form>
+              <div class="form-group   mb-auto ">
+                <select id="inputState" class="form-control">
+                  <option selected>-</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </form>
+          </td>
+          <td>
+            <form>
+              <div class="form-group mb-auto ">
+                <select id="inputState" class="form-control">
+                  <option selected>-</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </form>
+          </td>
+          <td>
+            <form>
+              <div class="form-group mb-auto">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+              </div>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Donald Trump</td>
+          <td>9</td>
+          <td>
+            <div class="form-check form-check-inline ">
+              <input class="form-check-input border-success" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1"></label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2"></label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
+              <label class="form-check-label" for="inlineRadio3"></label>
+            </div>
+          </td>
+          <td>
+            <form>
+              <div class="form-group   mb-auto ">
+                <select id="inputState" class="form-control">
+                  <option selected>-</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </form>
+          </td>
+          <td>
+            <form>
+              <div class="form-group mb-auto ">
+                <select id="inputState" class="form-control">
+                  <option selected>-</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </form>
+          </td>
+          <td>
+            <form>
+              <div class="form-group mb-auto">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+              </div>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Vail Davis</td>
+          <td>11</td>
+          <td>
+            <div class="form-check form-check-inline ">
+              <input class="form-check-input border-success" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1"></label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2"></label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
+              <label class="form-check-label" for="inlineRadio3"></label>
+            </div>
+          </td>
+          <td>
+            <form>
+              <div class="form-group   mb-auto ">
+                <select id="inputState" class="form-control">
+                  <option selected>-</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </form>
+          </td>
+          <td>
+            <form>
+              <div class="form-group mb-auto ">
+                <select id="inputState" class="form-control">
+                  <option selected>-</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </form>
+          </td>
+          <td>
+            <form>
+              <div class="form-group mb-auto">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+              </div>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Truman Clark</td>
+          <td>8</td>
+          <td>
+            <div class="form-check form-check-inline ">
+              <input class="form-check-input border-success" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1"></label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2"></label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
+              <label class="form-check-label" for="inlineRadio3"></label>
+            </div>
+          </td>
+          <td>
+            <form>
+              <div class="form-group   mb-auto ">
+                <select id="inputState" class="form-control">
+                  <option selected>-</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </form>
+          </td>
+          <td>
+            <form>
+              <div class="form-group mb-auto ">
+                <select id="inputState" class="form-control">
+                  <option selected>-</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </form>
+          </td>
+          <td>
+            <form>
+              <div class="form-group mb-auto">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+              </div>
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
 
     <!-- Optional JavaScript -->
