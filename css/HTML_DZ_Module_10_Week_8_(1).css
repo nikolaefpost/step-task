@@ -13,7 +13,7 @@
 	padding:4vmin;
 	margin:5vw 10vw;
 	background-color:#99c5c7;
-	background-image: url(pic/moon_flag.png);
+	background-image: url(../pic/moon_flag.png);
 	background-position: 130% 140%;
 	background-repeat: no-repeat;
 	background-size: 50%;
@@ -65,4 +65,3 @@ input[type=text]{
 #month, #year, #CVV{width:100%;}
 
 #year{align-self:flex-end;}
-
