@@ -9,6 +9,78 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <title>HTML_DZ_Module_11_12_week_9(1)</title>
+    <style>
+    .custom-checkbox, .custom-checkboxN, .custom-radio, .custom-radioF, .custom-radioY {  /*  стили для всех чекбоксов   */
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    .custom-checkbox+label, .custom-checkboxN+label, .custom-radio+label, /*  .custom-checkbox - в состоянии включен    */
+    .custom-radioF+label, .custom-radioY+label                                                  /*  .custom-checkboxN - в состоянии выключен    */
+     {
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+    }
+
+    .custom-radio+label::before,
+    .custom-radioF+label::before,
+    .custom-radioY+label::before  {
+      content: '';
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border-radius: 100%;
+      margin:0 0.5em 0 0em;
+
+    }
+    .custom-radioF+label::before{
+      border: 1px solid #DC3545;
+    }
+    .custom-radio+label::before{
+        border: 1px solid #28A745;
+    }
+    .custom-radioY+label::before{
+        border: 1px solid #FFC107;
+    }
+
+    .custom-radio+label::after,
+    .custom-radioF+label::after,
+    .custom-radioY+label::after {
+      content: '';
+      display: inline-block;
+      width: .8em;
+      height: .8em;
+      border-radius: 100%;
+
+    }
+
+    .custom-radio+label::after{
+      position:relative;
+      transform:translate(-1.4em, -.01em);
+      background:#28A745;
+    }
+
+    .custom-radioF+label::after{
+      position:relative;
+      transform:translateX(-1.4em);
+      opacity: 0;
+      background:#DC3545;
+    }
+    .custom-radioY+label::after{
+      position:relative;
+      transform:translateX(-1.4em);
+      opacity: 0;
+      background:yellow;
+    }
+
+
+
+
+    </style
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-info text-white">
@@ -45,7 +117,7 @@
 
 		<div class="row justify-content-center mt-5 ">
 				<div class="col-lg-2">
-					<h2 class="text-nowrap text-secondary">23 APRIL, TUESDAY</h2>
+					<h2 class="text-nowrap text-secondary font-weight-light">23 APRIL, TUESDAY</h2>
 				</div>
 			</div>
 
@@ -124,18 +196,9 @@
           <td class="align-middle">Valentin Scott</td>
           <td class="align-middle">10</td>
           <td class="align-middle">
-            <div class="form-check form-check-inline ">
-              <input class="form-check-input "  type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-              <label class="form-check-label" for="inlineRadio1"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-              <label class="form-check-label" for="inlineRadio2"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
-              <label class="form-check-label" for="inlineRadio3"></label>
-            </div>
+            <input type="checkbox" id="male" class="custom-radio"><label for="male"></label>
+            <input type="checkbox" id="fem" class="custom-radioY"><label for="fem"></label>
+            <input type="checkbox" id="female" class="custom-radioF"><label for="female"></label>
           </td>
           <td>
             <form>
@@ -171,18 +234,9 @@
           <td class="align-middle">Donald Trump</td>
           <td class="align-middle">9</td>
           <td class="align-middle">
-            <div class="form-check form-check-inline ">
-              <input class="form-check-input border-success" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-              <label class="form-check-label" for="inlineRadio1"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-              <label class="form-check-label" for="inlineRadio2"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
-              <label class="form-check-label" for="inlineRadio3"></label>
-            </div>
+          <input type="checkbox" id="male" class="custom-radio"><label for="male"></label>
+          <input type="checkbox" id="fem" class="custom-radioY"><label for="fem"></label>
+          <input type="checkbox" id="female" class="custom-radioF"><label for="female"></label>
           </td>
           <td>
             <form>
@@ -217,17 +271,9 @@
           <td class="align-middle">Vail Davis</td>
           <td class="align-middle">11</td>
           <td class="align-middle">
-            <div class="form-check form-check-inline ">
-              <input class="form-check-input border-success" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-              <label class="form-check-label" for="inlineRadio1"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-              <label class="form-check-label" for="inlineRadio2"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
-              <label class="form-check-label" for="inlineRadio3"></label>
+          <input type="checkbox" id="male" class="custom-radio"><label for="male"></label>
+          <input type="checkbox" id="fem" class="custom-radioY"><label for="fem"></label>
+          <input type="checkbox" id="female" class="custom-radioF"><label for="female"></label>
             </div>
           </td>
           <td>
@@ -263,18 +309,9 @@
           <td class="align-middle">Truman Clark</td>
           <td class="align-middle">8</td>
           <td class="align-middle">
-            <div class="form-check form-check-inline ">
-              <input class="form-check-input border-success" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-              <label class="form-check-label" for="inlineRadio1"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-              <label class="form-check-label" for="inlineRadio2"></label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
-              <label class="form-check-label" for="inlineRadio3"></label>
-            </div>
+          <input type="checkbox" id="male" class="custom-radio"><label for="male"></label>
+          <input type="checkbox" id="fem" class="custom-radioY"><label for="fem"></label>
+          <input type="checkbox" id="female" class="custom-radioF"><label for="female"></label>
           </td>
           <td>
             <form>
