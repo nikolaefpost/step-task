@@ -21,13 +21,13 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link text-white" href="#"><h4>Attendance</h4><span class="sr-only">(current)</span></a>
+            <a class="nav-link text-white-50" href="#"><h4>Attendance</h4><span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white-50" href="#"><h4>Schedule</h4></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white-50" href="#"><h4>Homework</h4></a>
+            <a class="nav-link text-white" href="#"><h4>Homework</h4></a>
           </li>
         </ul>
         <a class="navbar-brand mr-5" href="#">
@@ -45,60 +45,50 @@
 
 		<div class="row justify-content-center mt-5 ">
 				<div class="col-lg-2">
-					<h2 class="text-nowrap text-secondary">23 APRIL, TUESDAY</h2>
+					<h2 class="text-nowrap text-secondary">HOMEWORK</h2>
 				</div>
 			</div>
 
-    <div class="mr-2 ml-2">
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">1 Lesson</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">2 Lesson</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">3 Lesson</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">4 Lesson</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">5 Lesson</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">6 Lesson</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">7 Lesson</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">8 Lesson</a>
-          </li>
-        </ul>
-      </div>
-		</div>
+
 
     <table class="table table-borderless ml-5" style="width:auto; ">
       <thead>
         <tr class="text-secondary">
           <td scope="col"><small>Group</small></td>
           <td scope="col"><small>Subject</small></td>
-          <td scope="col"><small>Lesson topic</small></td>
-          <td scope="col"><small>Homework</small></td>
+          <td scope="col"></td>
+
         </tr>
       </thead>
       <tbody>
         <tr class="align-items-center">
-          <td class="align-middle">ABC-1234</td>
-          <td class="align-middle">HTML & CSS</td>
-          <td colspan="2">
-            <form class="form-inline">
-              <div class="form-group mx-sm-3 mb-2">
-                <label for="inputPassword2" class="sr-only"></label>
-                <input type="password" class="form-control" id="inputPassword2" placeholder="">
+          <td class="align-middle">
+            <div class="dropdown">
+              <button class="btn border dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ABC-1234
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">FDR-543</button>
+                <button class="dropdown-item" type="button">JHU-982</button>
+                <button class="dropdown-item" type="button">GFR-321</button>
               </div>
-              <button type="button" class="btn btn-info mb-2" data-toggle="modal" data-target="#exampleModal">Add homework</button>
+            </div>
+            </td>
+          <td class="align-middle">
+            <div class="dropdown">
+              <button class="btn border dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                HTML & CSS
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">JS</button>
+                <button class="dropdown-item" type="button">Python</button>
+                <button class="dropdown-item" type="button">Bootstrap</button>
+              </div>
+            </div>
+            </td>
+          <td colspan="1">
+            <form class="form-inline">
+              <button type="button" class="btn btn-info mb-2" data-toggle="modal" data-target="#exampleModal">Show</button>
             </form>
           </td>
 
@@ -307,36 +297,6 @@
       </tbody>
     </table>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">New Homework</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form class="">
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Topic:</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-              </div>
-
-              <div class="custom-file mb-3">
-               <input type="file" class="custom-file-input" id="validatedCustomFile"  required>
-               <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
-
-             </div>
-           </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-info" data-dismiss="modal">Save</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
